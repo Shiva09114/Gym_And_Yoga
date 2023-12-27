@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>shiva
+
+        </title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="jquery.counterup.js"></script>
+        <script src=" jquery.waypoints.js"></script>
+    
+        <script>
+            function getCaptcha()
+            {
+                var strArr="0123456789abcdefghijklmnopqrstuvwxyz"
+                var code = "";
+                for(var i=0;i<5;i++)
+                {
+                 code=code+strArr[Math.floor(Math.random()*20)];
+                }
+                return code;
+            }
+    
+            function demo()
+            {
+                var c = getCaptcha();
+                document.getElementById("captcha").innerHTML=c;
+                document.getElementById("check").value=c;
+            }
+        </script>
+    
+    </head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background:black;opacity:0.5;color:white">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" style="margin-left:20vh" href="index.html">GymAndYoga</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul style="margin-left:20vh" class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact US</a></li>
+              <li><a href="image.html">Picture Gallery</a></li>
+              <li><a href="video.html">Video Gallery</a></li>
+              <li><a href="review.html">Review</a></li>
+            </ul>
+            <ul class="nav navbar-nav " style="float:right;width:25%">
+              <li style="margin-top:1vh;float:right;width:50%;"><button class="btn btn-primary" data-toggle="modal" data-target="#loginModal" ><span class="glyphicon glyphicon-log-in"></span><p style="color:white; text-decoration:none;display:inline"> Login</p></button></li>
+              <li style="margin-top:1vh;float:right;width:50%;"><button class="btn btn-primary" data-toggle="modal" data-target="#registrationModal" ><span class="glyphicon glyphicon-user" ><p style="color:white;font-size:2vh;width:100%;display:inline">Become Members</p></span></button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container-fluid">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" >
+    <div class="item active">
+      <img src="gim4.jpg" />
+    </div>
+
+    <div class="item">
+      <img src="gim1.jpg" />
+    </div>
+
+    <div class="item">
+      <img src="gim2.jpg" />
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      
+
+    <div class="row" style="background:black">
+        <div class="col-md-12">
+            <div class="row" style="min-height:10vh"></div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5" data-aos="fade-right" data-aos-duration="3000" style="color:white"><pre style="background:none;border:none;color:white"><b style="font-size:4.5vh">WELCOME TO GYM AND YOGA CLASSES</b></pre><br /><h4 style="line-height:4vh"> Gym and Yoga classe is a cutting-edge functional fitness system that can help everyday persons.</h4><br /><br /><p style="line-height:5vh">Success isn’t really that difficult. There is a significant portion of the population here in North America, that actually want and need success to be hard! For those of you who are serious about having more, doing more, giving more and being more.</p></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4"data-aos="fade-left" data-aos-duration="3000" ><img src="yoga5.jpeg" /></div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row" style="min-height:10vh"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+    <div class="row" style="min-height:10vh"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000"><img src="gim6.png" height="600" /></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5" data-aos="fade-left" data-aos-duration="3000"><span style="color:red"><ion-icon name="remove-outline"></ion-icon><ion-icon name="remove-outline"></ion-icon></span><h3 style="display:inline-block;color:red">About Our Gym </h3><span style="color:red"><ion-icon name="remove-outline"></ion-icon><ion-icon name="remove-outline"></ion-icon></span><h2><b>SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES OUR VALUABLE TIME!</b></h2><br /><br /><h4 style="line-height:8vh;font-size:5vh">Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</h4> <button class="btn btn-warning">Become Member</button></div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row" style="min-height:10vh"></div>
+        </div>
+    </div>
+
+
+    <div class="row" >
+        <div class="col-md-12">
+    <div class="row" style="min-height:10vh"></div>
+         <div class="row">
+        <div class="col-md-6"  style="background:url(' yoga7.jpg');min-height:100vh;background-size:cover"></div>
+        <div class="col-md-6" ><h1 style="color:black;font-size:10vh;">Why You Should Go To Yoga</h1><br /><br /><p style="color:grey;font-size:4vh;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p><h3 style="color:purple"><ion-icon name="checkmark-done-outline"></ion-icon> &nbsp Yoga helps you to focus</h3><h3  style="color:purple"><ion-icon name="checkmark-done-outline"></ion-icon> &nbsp Yoga boosts brain power</h3><h3  style="color:purple"><ion-icon name="checkmark-done-outline"></ion-icon> &nbsp Yoga improves your strength</h3><h3  style="color:purple"><ion-icon name="checkmark-done-outline"></ion-icon> &nbsp Yoga helps you to breathe better</h3></div>
+        <div class="col-md-"></div>
+
+    </div>
+    <div class="row" style="min-height:10vh"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background:url(' yoga6.jpeg') no-repeat fixed;min-height:80vh;opacity:0.4;background-size:cover">
+                <div class="row" style="margin-top:30vh">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"><span class="counter" style="font-size:10vh;color:brown">5,000</span><span style="font-size:10vh;color:brown">+</span><h5 style="color:red;font-size:3vh;background:white;border-radius:1vh">Happy Customers</h5></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><span class="counter" style="font-size:10vh;color:brown">500</span><span style="font-size:10vh;color:brown">+</span><h5 style="color:red;font-size:3vh;background:white;border-radius:1vh">Total Workshops</h5></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><span class="counter" style="font-size:10vh;;color:brown">10</span><span style="font-size:10vh;color:brown">+</span><h5 style="color:red;font-size:3vh;background:white;border-radius:1vh">Experience of Years</h5></div>
+        <div class="col-md-2"></div>
+                </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12"  style="background:url(' gim3.jpg');min-height:50vh;text-align:center">
+                  <div class="row" style="min-height:10vh"></div>
+                  <div class="row">
+                      <ul style="display:inline">
+                          <li style="display:inline;margin-left:5vh"><a href="index.html">Home</a></li>
+                          <li style="display:inline;margin-left:5vh"><a href="contact.html">Contact Us</a></li>
+                          <li style="display:inline;margin-left:5vh"><a href="image.html">Picture Gallery</a></li>
+                          <li style="display:inline;margin-left:5vh"><a href="video.html">Video Gallery</a></li>
+                          <li style="display:inline;margin-left:5vh"><a href="review.html">Review</a></li>
+                      </ul>
+                      <ul style="float:right;display:inline">
+                          <li style="float:right;display:inline;margin-right:35vh"><button class="btn btn-primary" data-toggle="modal" data-target="#registrationModal" ><span class="glyphicon glyphicon-user" style="color:white">Become Members</span></button></li>
+                      </ul>
+                  </div>
+                  <div class="row" style="min-height:10vh"></div>
+                  <div class="row" style="min-height:10vh;text-align:center">
+                      <form action="/image" method="post">
+                          <input type="email" placeholder="Enter Email To Login" style="color:white;display:inline;height:10vh;width:40%;background:none;border:0.5vh solid white;border-radius:2vh" name="email"  />
+         <br /> <h6></h6><input type="Password" placeholder="Enter Your Password" style="color:white;display:inline;height:10vh;width:40%;background:none;border:0.5vh solid white;border-radius:2vh"  name="password"><br /><br />
+                          <input type="submit" value="Submit" style="display:inline;height:10vh;width:10%;background:orange;border:0.5vh solid white;border-radius:2vh"  />
+                      </form>
+                  </div>
+                  <div class="row" style="min-height:10vh"></div>
+                  <div class="row" style="min-height:10vh"></div>
+                  <div class="row">
+                     <div class="col-md-1"></div>
+                     <div class="col-md-4">
+                         <div style="color:white">Gym and Yoga classe is a cutting-edge functional fitness system that can help everyday persons.Gym and Yoga classe is a cutting-edge functional fitness system that can help everyday persons.Gym and Yoga classe is a cutting-edge functional fitness system that can help everyday persons.</div>
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-4">
+                  <div class="row">
+                     <div class="col-md-3" style="color:red;font-size:10vh"><button type="button" style="background:none;border:none"><a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></button></div>
+                     <div class="col-md-3" style="color:red;font-size:10vh"><button type="button" style="background:none;border:none"><a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></button></div>
+                     <div class="col-md-3" style="color:red;font-size:10vh"><button type="button" style="background:none;border:none"><a href="https://linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></button></div>
+                     <div class="col-md-3" style="color:red;font-size:10vh"><button type="button" style="background:none;border:none"><a href="https://youtube.com"><ion-icon name="logo-youtube"></ion-icon></a></button></div>
+                  </div>
+                     </div>
+                     <div class="col-md-1"></div>
+                  </div>
+                  <div class="row" style="min-height:10vh"></div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    <!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="registrationModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Become Member</h4>
+      </div>
+      <div class="modal-body">
+       <form method="post" action="/index" enctype="multipart/form-data">
+          <h6>Name:</h6> <input type="text" placeholder="Enter Your Name" class="form-control" name="Name">
+           <br /> <h6>Mobile:</h6><input type="text" placeholder="Enter Your Mobile Number" class="form-control" name="M_number">
+           <br /> <h6>Email:</h6><input type="email" placeholder="Enter Your Email id" class="form-control" name="email">
+           <br /> <h6>Set Password:</h6><input type="Password" placeholder="Set Your Password" class="form-control" name="password">
+           <br /> <h6>Profile:</h6><input type="file" placeholder="Set Your profile image" class="form-control" name="image">
+           <br /> <h6>Address:</h6><input type="text" placeholder="Enter Your Address" class="form-control" name="Address">
+           <br /> <h6>Gender:</h6><input type="radio"  value="male" name="gender" >Male
+           <input type="radio"  value="female" name="gender" >Female
+           <br /><br /> <h6>Gender:</h6><select name="course" style="border-radius:1vh;width:100%"><option>Select Your Plan Here...</option><option value="1month">1 Month</option><option value="2month">2 Month</option><option value="4month">3 Month</option><option value="4month">4 Month</option><option value="5month">5 Month</option><option value="6month">6 Month</option><option value="7month">7 Month</option><option value="8month">8 Month</option><option value="9month">9 Month</option><option value="10month">10 Month</option><option value="11month">11 Month</option><option value="12month">12 Month</option></select>
+           <br /><br />  <span>Captcha Code</span><span style="color:red;font-size:3vh">&nbsp;&nbsp;&nbsp;<strike id="captcha"> $h!v </strike>&nbsp;&nbsp;&nbsp;</span><span style="color:blue;font-size:3vh;cursor:pointer" onclick="demo()">Refresh</span>
+           <br /> <br /> <input class="form-control" placeholder="Enter Your Captcha Here" id="captcha" name="captcha" type="text" />
+           <br /> <br /> <input type="hidden" id="check"  name="check" value="$h!v" />
+            <br /><br /> <input type="submit" value="submit" class="btn btn-warning" />
+       </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login Page</h4>
+      </div>
+      <div class="modal-body">
+       <form action="/image" method="post">
+           <h6>Email Id:</h6> <input type="email" placeholder="Enter Your Email" class="form-control" name="email">
+           <br /> <h6>Password:</h6><input type="Password" placeholder="Enter Your Password" class="form-control" name="password">
+           <br />
+           <a href="./forgetpsw" style="text-decoration:none">forget password.?</a>
+           <p style="cursor:pointer;display:inline;float:right;color:blue" data-toggle="modal" data-target="#registrationModal" style="margin-left:30vh;text-decoration:none">New User Sign Up Here...</p>
+           <br /><br /> <input style="float:right" class="btn btn-primary"  type="submit">
+       </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+</div>
+    </div>
+
+
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+
+   
+
+      AOS.init();
+  </script>
+     <script>
+   $('.counter').countUp({
+          delay: 30,
+          time: 3000
+      });
+     </script>
+
+</body>
+  </html>

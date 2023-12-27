@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>forget password</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.js"></script>
+    <script src=" jquery.waypoints.js"></script>
+
+</head>
+    <body style="background:orange">
+
+        <div class="container" >
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="text-align:center;margin-top:10vh;box-shadow:3vh 2vh 3vh 2vh black;background:white">
+       <h3>Password Forgeted</h3><br /><br />
+<form action="/forgetpsw" method="post">
+    <input type="email" class="form-control" placeholder="enter your email" name="email" /><br /><br />
+    <input type="text"  class="form-control" name="number" placeholder="enter your number"/><br /><br />
+    <input type="password"  class="form-control" name="newpass" placeholder="enter your new password" /><br /><br />
+    <input type="password"  class="form-control" name="cnfpass" placeholder="confirm your new password" /><br /><br />
+    <input type="submit" class="btn btn-success" value="submit" />
+</form>
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
+            </div>
+    </body>
+    </html>
